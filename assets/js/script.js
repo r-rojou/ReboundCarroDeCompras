@@ -64,8 +64,6 @@ poleras.forEach(polera =>{
             }
         }
     });
-
-
 })
 
 const selectorEnvios = document.getElementById('tipoEnvio');
@@ -100,8 +98,6 @@ const actualizarTotal = ()=>{
 
     precioTotal.innerText = totalFormateado;
 }
-
-
 
 btnDescuento.addEventListener('click', function(){
     let totalConDescuento = totalPago + costoEnvio;
