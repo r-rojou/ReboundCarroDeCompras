@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./assets/css/css_bootstrap/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/estilos.css">
+    <title>Carro de Compras</title>
+  </head>
+  <body>
+
+    <br><br>
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-7">
+          <div class="row">
+            <div class="col-9">
+              <h2>Carro de Compras</h2>
+            </div>
+            <div class="col-3">
+              <p>3 Items</p>
+            </div>           
+          </div>  
+          <br>
+          <hr>  
+          
+          <!-- Polera 1 -->
+          <div class="row">
+            <div class="col">
+              <div class="row">
+                <div class="col">
+                  <img src="./assets/img/burdeo.jpg" class="img-fluid">
+                </div>
+                <div class="col">
+                  <p>Polera</p>
+                  <p><b>Color Burdeo</b></p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="polera" data-producto-id="1">
+                <div class="d-flex align-items-center">
+                  <button class="btn btn-sm btn-outline-danger btnQuitar">-</button>
+                  <span class="mx-3 contador">0</span>
+                  <button class="btn btn-sm btn-outline-success btnAgregar">+</button>
+                </div>
+              </div>
+
+            </div>
+            <div class="col">
+              <p>$42.000</p>
+            </div>
+          </div> 
+
+          <hr>
+
+          <!-- Polera 2 -->
+          <div class="row">
+            <div class="col">
+              <div class="row">
+                <div class="col">
+                  <img src="./assets/img/gris.jpg" class="img-fluid">
+                </div>
+                <div class="col">
+                  <p>Polera</p>
+                  <p><b>Color Gris</b></p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="polera" data-producto-id="2">
+                <div class="d-flex align-items-center">
+                  <button class="btn btn-sm btn-outline-danger btnQuitar">-</button>
+                  <span class="mx-3 contador">0</span>
+                  <button class="btn btn-sm btn-outline-success btnAgregar">+</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <p>$40.000</p>
+            </div>
+          </div> 
+
+          <hr>
+
+          <!-- Polera 3 -->
+          <div class="row">
+            <div class="col">
+              <div class="row">
+                <div class="col">
+                  <img src="./assets/img/negro.jpg" class="img-fluid">
+                </div>
+                <div class="col">
+                  <p>Polera</p>
+                  <p><b>Color Negro</b></p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="polera" data-producto-id="3">
+                <div class="d-flex align-items-center">
+                  <button class="btn btn-sm btn-outline-danger btnQuitar">-</button>
+                  <span class="mx-3 contador">0</span>
+                  <button class="btn btn-sm btn-outline-success btnAgregar">+</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <p>$43.000</p>
+            </div>
+          </div> 
+        </div>
+        
+        <div class="col-5 colorResumen"> 
+          <br>      
+          <h2>Resumen de la Compra</h2>
+          <hr>
+          <div class="itemTotal">
+            <p>Items: 0</p>
+            <p>Total: $0</p>
+          </div>
+          <div>
+            <p>ENVÍO</p>
+
+            <select id="tipoEnvio" class="form-select" aria-label="Seleccione tipo de envío">
+              <option selected>Seleccione tipo de envío</option>
+              <option value="envio1">Envio Express $5000</option>
+              <option value="envio2">Envio Normal $3000</option>
+            </select> <br>
+          </div>
+          <div>
+            <p>CÓDIGO DE DESCUENTO</p>
+            <form class="input-group mb-3">
+              <input type="text" class="form-control codigoPromo" id="descuento" placeholder="Ingresa tu código" aria-label="Código de descuento">
+              <button class="btn btn-outline-dark" type="button" id="btnDescuento">Aplicar</button>
+            </form> 
+            <hr>
+            <div id="total" class="itemTotal">
+              <p>Precio total:</p>
+              <p>$<span id="totalPrice">0</span></p>
+
+            </div>
+            <br>
+            <div class="d-flex justify-content-center">
+              <button id="btnCompra" class="btn btn-danger">Realizar Compra</button> 
+            </div>         
+            <br>
+          </div>
+        </div> 
+      </div>
+    </div>
+
+
+
+
+
+    <script src="./assets/js/js_bootstrap/bootstrap.bundle.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
